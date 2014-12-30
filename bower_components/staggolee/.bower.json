@@ -1,0 +1,28 @@
+{
+  "name": "staggolee",
+  "main": "Layout.scss",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "facebook",
+    "bower_components",
+    "test",
+    "node_modules",
+    "*.md",
+    "*.css",
+    "**/*.css"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/Haemp/Staggolee",
+  "_release": "a34f0c61fd",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a34f0c61fd90d996cbc3f9bc61841ba52e6c8464"
+  },
+  "_source": "git://github.com/Haemp/Staggolee.git",
+  "_target": "*",
+  "_originalSource": "staggolee",
+  "_direct": true
+}

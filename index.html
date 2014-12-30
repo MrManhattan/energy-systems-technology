@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>EnergyDrink.com</title>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="energy.js"></script>
+        <link rel="stylesheet" href="bower_components/staggolee/Layout.css"/>
+    </head>
+
+    <body ng-app="Energy" ng-controller="EnergyCtrl">
+
+        <div>
+            <select ng-options="item.name for item in EnergyService.energyStores" ng-model="selectedStore">
+                <option value="">Choose Energy Stores</option>
+            </select>
+            <select ng-options="item.name for item in EnergyService.energyExpendatures" ng-model="selectedExpendature">
+                <option value="">Choose Energy Expendatures</option>
+            </select>
+        </div>
+
+        <div class="L-hbox L-hbox-sep10 L-hbox-vcenter">
+            <h2>{{ selectedStore.name }}</h2>
+            <div>Compare to </div>
+            <h2>{{ selectedExpendature.name }}</h2>
+        </div>
+    </body>
+</html>
