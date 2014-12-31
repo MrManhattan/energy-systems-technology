@@ -1,4 +1,10 @@
-body{ font: normal 18px sans-serif;  }
+body{ margin-top: 100px;font: normal 18px sans-serif; background: url(bg.jpg) no-repeat center center; background-size: 100% 100%; }
 .ComparisonBox{
-    font-size: 2em;
+    font-size: 1em;
 }
+.Title{ color: #878e26; }
+.ComparisonBox{ max-width: 800px; margin: 0px auto;}
+.SelectComparison-label{ font-size: 0.8em;  color:#777; text-align: left; margin-left:10px;}
+.Card{ background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,0,0.3); border-radius: 3px;}
+.Card-section{ padding: 20px 30px; border-top: 1px solid #ccc; }
+.Card-section:first-child{ border:none;}

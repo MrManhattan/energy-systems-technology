@@ -4,34 +4,40 @@
         <script src="bower_components/angular/angular.js"></script>
         <script src="/static/energy.js"></script>
         <link rel="stylesheet" href="bower_components/staggolee/Layout.css"/>
+        <link rel="stylesheet" href="static/style.css"/>
+
     </head>
 
     <body ng-app="Energy" ng-controller="EnergyCtrl">
 
         <div class="L-center">
-            <h1>Joules for Fools</h1>
-            <div class="ComparisonBox L-ib-container L-hbox-sep10">
-                <div>
-                    <div>The Energy of</div>
-                    <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedCompare">
-                        <option value="">Choose</option>
-                    </select>
-                </div>
+            <h1 class="Title">Joules for Fools</h1>
+            <div class="Card ComparisonBox">
+                <div class="L-ib-container L-hbox-sep10">
+                    <div class="SelectComparison">
+                        <div class="SelectComparison-label">The Energy of</div>
+                        <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedCompare">
+                            <option value="">Choose</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <div>Is equal to</div>
-                    <h1>{{ ratio }}</h1>
-                </div>
+                    <div>
+                        <div style="padding-top:10px;">Is equal to</div>
+                        <h1>{{ ratio }}</h1>
+                    </div>
 
-                <div>
-                    <div>The Energy of</div>
-                    <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedComparee">
-                        <option value="">Choose</option>
-                    </select>
+                    <div class="SelectComparison">
+                        <div class="SelectComparison-label">The Energy of</div>
+                        <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedComparee">
+                            <option value="">Choose</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Card-section">
+                    <button ng-click="loadRandom()">Random</button>
                 </div>
             </div>
         </div>
 
-        <button ng-click="loadRandom()">Random</button>
     </body>
 </html>
