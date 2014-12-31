@@ -12,17 +12,25 @@
         var self = this;
 
         self.energyExpendatures = [
-            {name: '10km Bike ride', energy: 1464000, type:'distance'},
-
+            {name: '1km Bike ride', energy: 146400, type:'exp'},
+            {name: '1km Car drive', energy: 2.72e6, type:'exp'},
             {name: 'Shot by air gun', energy: 10, type:'kinetic'},
             {name: 'Shot by hunting rifle', energy: 1000, type:'kinetic'},
-            {name: 'Human punch', energy: 150, type:'kinetic'},
+            {name: 'Human punch', energy: 150, type:'exp'},
+            {name: '1day of human life', energy: 10e6, type:'exp'},
 
             {name: 'World energy consumption by second', energy: 1.6288038e13}
 
         ];
 
         self.energyStores = [
+            {name: 'Litre gasoline', energy: 33.92e6, type:'store'},
+            {name: '1litre water at 10m', energy: 0.0001e6, type:'store'},
+            {name: '1kg compressed air', energy: 0.5e6, type:'store'},
+            {name: 'Anti matter', energy: 1.8e11, type:'store'},
+            {name: '1kg Human Fat', energy: 37e6, type:'store'},
+            {name: 'AA Battery', energy: 0.0154e6, type:'store'},
+            {name: 'Car Battery', energy: 2.6e6, type:'store'},
             {name: 'Mars bar', energy: 963000, type:'store'},
             {name: 'Banana', energy: 418000, type:'store'}
         ];
