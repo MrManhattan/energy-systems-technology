@@ -135,7 +135,7 @@
             // Take the first thing. compare it to the other thing
             // How many bananas are there in a mars bar?
             if(ratio < 1){
-                ratio = ratio * 100 +'% of';
+                ratio = Math.round(ratio * 100) +'% of';
             }else{
                 ratio += 'x'
             }
