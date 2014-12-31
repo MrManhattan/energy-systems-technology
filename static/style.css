@@ -3,10 +3,10 @@ body{ margin-top: 100px;font: normal 18px 'Open Sans', sans-serif; background: u
     font-size: 1em;
 }
 
-.Title{ color: #7E6E5F; font-family: 'Lobster', cursive; font-weight: 300; font-size: 4em; text-shadow: 0 1px 1px #fff, 0 2px 3px rgba(0,0,0,0.3); }
+.Title{ color: #7E6E5F; font-family: 'Lobster', cursive; font-weight: 300; font-size: 4em; text-shadow: 0 1px 1px #fff, 0 2px 3px rgba(0,0,0,0.7); }
 .ComparisonBox{ max-width: 800px; margin: 0px auto;}
 .ComparisonBox-ratio{ font-family: 'Roboto Slab', serif; color:#a5a642; }
 .SelectComparison-label{ font-size: 0.8em;  color:#777; text-align: left; margin-left:10px;}
-.Card{ background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,0,0.3); border-radius: 3px;}
+.Card{ background-color: #fff; box-shadow: 0px 4px 25px rgba(0,0,0,0.35); border-radius: 3px;}
 .Card-section{ padding: 20px 30px; border-top: 1px solid #ccc; }
 .Card-section:first-child{ border:none;}
