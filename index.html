@@ -5,7 +5,7 @@
         <script src="static/energy.js"></script>
         <link rel="stylesheet" href="bower_components/staggolee/Layout.css"/>
         <link rel="stylesheet" href="static/style.css"/>
-
+        <link href='http://fonts.googleapis.com/css?family=Lobster|Roboto+Slab|Open+Sans:300' rel='stylesheet' type='text/css'>
     </head>
 
     <body ng-app="Energy" ng-controller="EnergyCtrl">
@@ -23,7 +23,7 @@
 
                     <div>
                         <div style="padding-top:10px;">Is equal to</div>
-                        <h1>{{ ratio }}</h1>
+                        <h1 class="ComparisonBox-ratio">{{ ratio }}</h1>
                     </div>
 
                     <div class="SelectComparison">
@@ -39,6 +39,6 @@
                 </div>
             </div>
         </div>
-    
+
     </body>
 </html>
