@@ -9,10 +9,10 @@
     <body ng-app="Energy" ng-controller="EnergyCtrl">
 
         <div>
-            <select ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedCompare">
+            <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedCompare">
                 <option value="">Choose Energy Stores</option>
             </select>
-            <select ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedComparee">
+            <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedComparee">
                 <option value="">Choose Energy Expendatures</option>
             </select>
         </div>
@@ -24,6 +24,6 @@
         </div>
         <div>1 {{selectedCompare.name}} is {{ ratio }} {{ selectedComparee.name }}</div>
 
-        <button ng-click="recalc()">Recalc</button>
+        <!-- <button ng-click="recalc()">Recalc</button> -->
     </body>
 </html>
