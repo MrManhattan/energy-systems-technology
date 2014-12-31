@@ -8,21 +8,29 @@
 
     <body ng-app="Energy" ng-controller="EnergyCtrl">
 
-        <div>
-            <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedCompare">
-                <option value="">Choose Energy Stores</option>
-            </select>
-            <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedComparee">
-                <option value="">Choose Energy Expendatures</option>
-            </select>
-        </div>
+        <div class="L-center">
+            <h1>Joules for Fools</h1>
+            <div class="ComparisonBox L-ib-container L-hbox-sep10">
+                <div>
+                    <div>The Energy of</div>
+                    <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedCompare">
+                        <option value="">Choose</option>
+                    </select>
+                </div>
 
-        <div class="L-hbox L-hbox-sep10 L-hbox-vcenter">
-            <h2>{{ selectedCompare.name }}</h2>
-            <div>Compare to </div>
-            <h2>{{ selectedComparee.name }}</h2>
+                <div>
+                    <div>Is equal to</div>
+                    <h1>{{ ratio }}</h1>
+                </div>
+
+                <div>
+                    <div>The Energy of</div>
+                    <select ng-change="recalc()" ng-options="item.name for item in EnergyService.allEnergy" ng-model="selectedComparee">
+                        <option value="">Choose</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div>1 {{selectedCompare.name}} is {{ ratio }} {{ selectedComparee.name }}</div>
 
         <!-- <button ng-click="recalc()">Recalc</button> -->
     </body>
