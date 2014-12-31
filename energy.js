@@ -110,11 +110,10 @@
             var temp = $scope.selectedComparee;
             $scope.selectedComparee = $scope.selectedCompare;
             $scope.selectedCompare = temp;
-            $scope.recalc();
          
         }
         //Start out with random entries
         $scope.loadRandom();
-    }   
+    }
 
-}());
+})();
