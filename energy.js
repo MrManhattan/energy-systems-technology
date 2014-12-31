@@ -14,6 +14,7 @@
         self.energyExpendatures = [
             {name: '1km Bike ride', energy: 146400, type:'expendature'},
             {name: '1km Car drive', energy: 2.72e6, type:'expendature'},
+            {name: '1km walking', energy: 0.22e6, type:'expendature'},
             {name: 'Impact by air gun', energy: 10, type:'kinetic'},
             {name: 'Impact by hunting rifle', energy: 1000, type:'kinetic'},
             {name: 'Human punch', energy: 150, type:'expendature'},
