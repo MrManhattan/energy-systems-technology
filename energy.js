@@ -18,7 +18,7 @@
             {name: 'Shot by hunting rifle', energy: 1000, type:'kinetic'},
             {name: 'Human punch', energy: 150, type:'exp'},
             {name: '1day of human life', energy: 10e6, type:'exp'},
-
+            {name: '10min hot shower', energy: 20e6, type:'exp'},
             {name: 'World energy consumption by second', energy: 1.6288038e13}
 
         ];
