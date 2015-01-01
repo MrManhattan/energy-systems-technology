@@ -137,7 +137,30 @@
             if(ratio < 1){
                 ratio = Math.round(ratio * 100) +'% of';
             }else{
-                ratio += 'x'
+
+                //ratio = ratio + '';
+
+                if(ratio >= 1000000000){
+                    ratio = Math.round(ratio);
+                    ratio = ratio + '';
+                    ratio = ratio.slice(0,-9);
+                    ratio += 'B x';
+                }  
+                else if(ratio >= 1000000){
+                    ratio = Math.round(ratio);
+                    ratio = ratio + '';
+                    ratio = ratio.slice(0,-6);
+                    ratio += 'M x';
+                }
+                else if(ratio >= 10000){
+                    ratio = Math.round(ratio);
+                    ratio = ratio + '';
+                    ratio = ratio.slice(0,-3);
+                    ratio += 'K x';
+                }
+                else{
+                     ratio += ' x';
+                }
             }
             $scope.ratio = ratio;
         }
